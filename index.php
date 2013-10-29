@@ -29,16 +29,14 @@ function main()
 <head>
 <meta charset="UTF-8" />
 <meta name="description" content="Looney Limericks poem scheme" />
-<meta name="ROBOTS" content="NO INDEX" />
+<meta name="ROBOTS" content="NO INDEX, NOFOLLOW" />
+<link rel="sylesheet" type="text/css" href="<?php echo BASEURL;?>css/styles.css" />
+<link rel="shortcut icon" href="limerick.ico" />
 <title>Looney Limericks</title>
-<h1>Looney Limericks</h1>
 <body>
-
-<form action="script.php" method="post">
-Name: <input type="text" name="name"><br/>
-Password: <input type="password" name="password"><br/>
-<input type="submit" value="Submit">
-</form><br>
+	<?php
+		require_once("./views/display.php");
+	?>
 
 </body>
 </html>
