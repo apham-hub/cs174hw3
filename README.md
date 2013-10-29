@@ -1,2 +1,2 @@
-cs174hw3
+CS174 Homework 3
 ========
