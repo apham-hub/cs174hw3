@@ -3,22 +3,7 @@
 session_start();
 require_once("./config/config.php");
 
-?>
-
-<!DOCTYPE html>
-
-<html>
-<head>
-<meta charset="UTF-8">
-<meta name="ROBOTS" content="NO INDEX">
-<title>Looney Limericks</title>
-<h1>Looney Limericks</h1>
-
-<?php
-
 $default_ctrl = "main";
-$default_view = "notloggedin";
-$default_entry = "mostrecent";
 
 if(array_key_exists("c", $_REQUEST))
 {
@@ -29,31 +14,24 @@ else
 	$controller = $default_ctrl;
 }
 
-if(array_key_exists("view", $_REQUEST))
+function main()
 {
-	$view = strtolower($_REQUEST["view"]);
+	require_once("./controllers/main.php");
+	mainController();
+	displayView($_SESSION['views']);
 }
-else
-{
-	$view = $default_view;
-}
-
-if(array_key_exists("e", $_REQUEST))
-{
-	$entry = strtolower($_REQUEST["e"]);
-}
-else
-{
-	$entry = $default_entry;
-}
-
-require_once("./controllers/main.php");
-require_once("./controllers/login.php");
-require_once("./controllers/blog.php");
 
 ?>
-</head>
 
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="description" content="Looney Limericks poem scheme" />
+<meta name="ROBOTS" content="NO INDEX" />
+<title>Looney Limericks</title>
+<h1>Looney Limericks</h1>
 <body>
 
 <form action="script.php" method="post">
