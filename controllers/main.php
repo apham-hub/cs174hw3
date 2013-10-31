@@ -1,14 +1,18 @@
 <?php
 
-class Main {
+require_once("models/database.php");
 
+class mainController
+{
+  function __contruct()
+  {
 
-	function __construct() {
-		require_once("./views/notloggedin.php");
-		$model = new Entry_Model();
-		$this->view->model;
-	}
+  }
 
+  function mainEntry()
+  {
+     
+  }
 
 }
 ?>
