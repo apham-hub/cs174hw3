@@ -29,7 +29,7 @@ function main()
 <meta charset="UTF-8" />
 <meta name="description" content="Looney Limericks poem scheme" />
 <meta name="ROBOTS" content="NO INDEX, NOFOLLOW" />
-<link rel="sylesheet" type="text/css" href="<?php echo BASEURL;?>css/styles.css" />
+<link rel="stylesheet" type="text/css" href="<?php echo BASEURL;?>css/styles.css" />
 <link rel="shortcut icon" href="limerick.ico" />
 <title>Looney Limericks</title>
 <body>
