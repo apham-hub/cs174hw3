@@ -18,7 +18,6 @@ function main()
 {
 	require_once("./controllers/main.php");
 	mainController();
-	displayView($_SESSION['views']);
 }
 
 ?>
