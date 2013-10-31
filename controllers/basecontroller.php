@@ -1,7 +1,7 @@
 <?php
 class basecontroller()
 {
-    function __contruct()
+    function __construct()
     {
 
     }

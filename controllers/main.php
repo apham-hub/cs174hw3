@@ -6,9 +6,9 @@ require_once("models/database.php");
 
 class mainController extends basecontroller
 {
-  function __contruct()
+  function __construct()
   {
-
+     parent::__construct();
   }
 
   function mainEntry()
